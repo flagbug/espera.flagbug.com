@@ -110,6 +110,10 @@ nav li {
   margin-right: 50px;
 }
 
+.download small {
+  font-size: 14px;
+}
+
 .download, .download:hover {
   color: black;
   text-decoration: none;
