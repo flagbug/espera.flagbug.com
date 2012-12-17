@@ -1,0 +1,106 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe WP", Helvetica, "Lucida Grande", sans-serif;
+  background: #DDD;
+  border-top: 20px solid #2D7DCD;
+}
+
+header {
+  color: white;
+  width: 100%;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h1, h2 {
+  font-weight: 100;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.container:before {
+  content: '';
+  height: 225px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+  background: #333;
+}
+
+.container {
+  width: 900px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screenshot {
+  margin-top: 10px;
+  background: url('/images/screenshot.png') no-repeat;
+  height: 541px;
+  color: white;
+  position: relative;
+}
+
+.screenshot .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0px;
+  position: absolute;
+  padding: 25px 40px 25px 40px;
+  width: 100%;
+  color: white;
+}
+
+.features {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.features li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+#download {
+  padding: 10px 20px 10px 20px;
+  background: #DE872A;
+  display: block;
+  width: 200px;
+  font-size: 18px;
+}
+
+#download, #download:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#subtitle {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 32px;
+}
