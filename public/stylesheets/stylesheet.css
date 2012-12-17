@@ -100,15 +100,17 @@ nav li {
   margin-right: 25px;
 }
 
-#download {
+.download {
   padding: 10px 20px 10px 20px;
   background: #48CB00;
   display: block;
   width: 200px;
   font-size: 18px;
+  float: left;
+  margin-right: 50px;
 }
 
-#download, #download:hover {
+.download, .download:hover {
   color: black;
   text-decoration: none;
 }
