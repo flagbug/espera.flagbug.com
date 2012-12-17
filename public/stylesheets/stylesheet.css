@@ -70,6 +70,7 @@ nav li {
 
 .screenshot {
   margin-top: 10px;
+  margin-bottom: 25px;
   background: url('/images/screenshot.png') no-repeat;
   height: 541px;
   color: white;
@@ -112,8 +113,13 @@ nav li {
   text-decoration: none;
 }
 
-#subtitle {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 32px;
+.feature-box {
+  float: left;
+  width: 250px;
+  margin-right: 50px;
+}
+
+.feature-box h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
