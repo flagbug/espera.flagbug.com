@@ -17,6 +17,11 @@ header {
   width: 100%;
 }
 
+header a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 64px;
   margin-bottom: 10px;
