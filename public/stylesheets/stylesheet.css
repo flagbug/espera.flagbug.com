@@ -9,7 +9,7 @@
 body {
   font-family: "Segoe UI", "Segoe WP", Helvetica, "Lucida Grande", sans-serif;
   background: #DDD;
-  border-top: 20px solid #2D7DCD;
+  border-top: 20px solid #119EDA;
 }
 
 header {
@@ -101,7 +101,7 @@ nav li {
 
 #download {
   padding: 10px 20px 10px 20px;
-  background: #DE872A;
+  background: #48CB00;
   display: block;
   width: 200px;
   font-size: 18px;
