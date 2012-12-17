@@ -17,7 +17,7 @@ header {
   width: 100%;
 }
 
-header a, a:hover {
+header li a, a:hover {
   color: white;
   text-decoration: none;
 }
@@ -43,6 +43,10 @@ nav li {
   display: inline-block;
   margin-right: 15px;
   font-size: 20px;
+}
+
+.selected a {
+  font-weight: bold;
 }
 
 .container:before {
@@ -79,6 +83,10 @@ nav li {
   padding: 25px 40px 25px 40px;
   width: 100%;
   color: white;
+}
+
+.overlay h2 {
+  font-size: 32px;
 }
 
 .features {
