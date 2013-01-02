@@ -129,3 +129,50 @@ nav li {
   font-size: 26px;
   margin-bottom: 10px;
 }
+
+.release-notes {
+  margin-top: 75px;
+}
+
+.release-notes ul {
+  list-style: none;
+}
+
+.release-notes ul ul {
+  margin-left: 25px;
+}
+
+.release-notes li {
+  margin-bottom: 10px;
+}
+
+.version, .feature, .bugfix, .change, .improvement {
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.version {
+  background: #7C4199;
+  width: 45px;
+}
+
+.feature {
+  background: #00B159;
+  width: 90px;
+}
+
+.bugfix {
+  background: #D11141;
+  width: 75px;
+}
+
+.change {
+  background: #F37735;
+  width: 85px;
+}
+
+.improvement {
+  background: #00AEDB;
+  width: 135px;
+}
