@@ -27,7 +27,7 @@ module ReleaseNotes
         version_header_match = /----------------------------------- v[0-9].[0-9].[0-9] -----------------------------------/
         version_match = /[0-9].[0-9].[0-9]/
         
-        versions = changelog.scan(version_header_match).map{|header| header.scan(version_match)}
+        versions = changelog.scan(version_header_match).map{|header| header.match(version_match)}
         version_contents = changelog.split(version_header_match).reject(&:empty?)
 
         changetypes = ["FEATURES", "CHANGES", "IMPROVEMENTS", "BUGFIXES"]
