@@ -11,45 +11,52 @@ get '/release-notes' do
 end
 
 module ReleaseNotes
-    def self.get_changelog
-      client = HTTPClient.new
-      changelog = client.get_content("http://raw.github.com/flagbug/Espera/master/Changelog.txt")
-        
-      version_header_match = /----------------------------------- v[0-9].[0-9].[0-9] -----------------------------------/
-      version_match = /[0-9].[0-9].[0-9]/
-      
-      versions = changelog.scan(version_header_match).map{|header| header.scan(version_match)}
-      version_contents = changelog.split(version_header_match).reject(&:empty?)
 
-      changetypes = ["FEATURES", "CHANGES", "IMPROVEMENTS", "BUGFIXES"]
-      changetype_match = Regexp.new(changetypes.map{|type| type + ":"}.join("|"))
+    @@cached_releases = nil
+    @@caching_time = nil
+    
+    def self.get_changelog
+      timeNow = Time.now
       
-      version_contents.each do |x|
-        puts "Content"
-        puts x
-      end
-      
-      releases = versions.zip(version_contents).map do |x|
-        version = x[0]
-        content = x[1]
+      if @@caching_time.nil? || ((timeNow - @@caching_time) / 3600) > 3.0 # Retrieve the releases only if they haven't been updated in 3 hours
+        @@caching_time = timeNow
         
-        changes = content.scan(changetype_match).map{|change| change[0..-2]}
-        content_split = content.split(changetype_match).map{|x| x.gsub("\n", "")}.reject(&:empty?)
-        
-        entries = changes.zip(content_split).map do |change|
-          strip_count = change[0] == "BUGFIXES" ? 3 : 2
-          type = change[0].downcase[0..-strip_count]
-          description = change[1]
+        client = HTTPClient.new
+        changelog = client.get_content("http://raw.github.com/flagbug/Espera/master/Changelog.txt")
           
-          description.split("- ").reject(&:empty?).map{|x| ChangelogEntry.new(type, x)} 
+        version_header_match = /----------------------------------- v[0-9].[0-9].[0-9] -----------------------------------/
+        version_match = /[0-9].[0-9].[0-9]/
+        
+        versions = changelog.scan(version_header_match).map{|header| header.scan(version_match)}
+        version_contents = changelog.split(version_header_match).reject(&:empty?)
+
+        changetypes = ["FEATURES", "CHANGES", "IMPROVEMENTS", "BUGFIXES"]
+        changetype_match = Regexp.new(changetypes.map{|type| type + ":"}.join("|"))
+        
+        releases = versions.zip(version_contents).map do |x|
+          version = x[0]
+          content = x[1]
+          
+          changes = content.scan(changetype_match).map{|change| change[0..-2]}
+          content_split = content.split(changetype_match).map{|x| x.gsub("\n", "")}.reject(&:empty?)
+          
+          entries = changes.zip(content_split).map do |change|
+            strip_count = change[0] == "BUGFIXES" ? 3 : 2
+            type = change[0].downcase[0..-strip_count]
+            description = change[1]
+            
+            description.split("- ").reject(&:empty?).map{|x| ChangelogEntry.new(type, x)} 
+          end
+          
+          entries = entries.flatten
+          
+          ReleaseEntry.new(version, entries)
         end
         
-        entries = entries.flatten
-        
-        ReleaseEntry.new(version, entries)
+        @@cached_releases = releases
       end
       
-      releases
+      @@cached_releases
     end
 end
 
