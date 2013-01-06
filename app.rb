@@ -10,8 +10,8 @@ get '/release-notes' do
   erb :releasenotes
 end
 
-get '/contribute' do
-  erb :contribute
+get '/about' do
+  erb :about
 end
 
 module ReleaseNotes
