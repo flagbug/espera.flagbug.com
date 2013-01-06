@@ -10,6 +10,10 @@ get '/release-notes' do
   erb :releasenotes
 end
 
+get '/contribute' do
+  erb :contribute
+end
+
 module ReleaseNotes
 
     @@cached_releases = nil

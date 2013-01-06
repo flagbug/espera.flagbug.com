@@ -10,6 +10,7 @@ body {
   font-family: "Segoe UI", "Segoe WP", Helvetica, "Lucida Grande", sans-serif;
   background: #DDD;
   border-top: 20px solid #119EDA;
+  color: #222;
 }
 
 header {
@@ -43,6 +44,10 @@ nav li {
   display: inline-block;
   margin-right: 15px;
   font-size: 20px;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .selected a {
@@ -130,6 +135,10 @@ nav li {
   margin-bottom: 10px;
 }
 
+.feature-box p {
+  font-size: 14px;
+}
+
 .release-notes {
   margin-top: 75px;
 }
@@ -175,4 +184,17 @@ nav li {
 .improvement {
   background: #00AEDB;
   width: 135px;
+}
+
+.development-info {
+  margin-top: 80px;
+}
+
+.donate {
+  margin-top: 25px;
+}
+
+.development-info p, .donate p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
