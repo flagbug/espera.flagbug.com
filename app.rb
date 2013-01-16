@@ -28,8 +28,8 @@ module ReleaseNotes
         client = HTTPClient.new
         changelog = client.get_content("http://raw.github.com/flagbug/Espera/master/Changelog.txt")
           
-        version_header_match = /----------------------------------- v[0-9].[0-9].[0-9] -----------------------------------/
-        version_match = /[0-9].[0-9].[0-9]/
+        version_header_match = /----------------------------------- v\d+.\d+.\d+ -----------------------------------/
+        version_match = /\d+.\d+.\d+/
         
         versions = changelog.scan(version_header_match).map{|header| header.match(version_match)}
         version_contents = changelog.split(version_header_match).reject(&:empty?)
