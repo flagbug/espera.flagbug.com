@@ -155,11 +155,12 @@ p {
   color: white;
   padding: 5px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .version {
   background: #7C4199;
-  width: 45px;
+  width: 55px;
 }
 
 .feature {
