@@ -144,7 +144,7 @@ p {
 }
 
 .release-notes ul ul {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .release-notes li {
@@ -153,34 +153,37 @@ p {
 
 .version, .feature, .bugfix, .change, .improvement {
   color: white;
-  padding: 5px;
+  padding: 3px;
   margin-bottom: 5px;
   text-align: center;
+  font-size: 14px;
 }
 
 .version {
   background: #7C4199;
   width: 55px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .feature {
   background: #00B159;
-  width: 90px;
+  width: 75px;
 }
 
 .bugfix {
   background: #D11141;
-  width: 75px;
+  width: 65px;
 }
 
 .change {
   background: #F37735;
-  width: 85px;
+  width: 75px;
 }
 
 .improvement {
   background: #00AEDB;
-  width: 135px;
+  width: 115px;
 }
 
 .donate {
