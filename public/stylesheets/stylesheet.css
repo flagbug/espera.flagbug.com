@@ -190,11 +190,11 @@ p {
   margin-top: 80px;
 }
 
-.contact {
+.development-info {
   margin-top: 25px;
 }
 
-.development-info p, .donate p {
+.contact p, .donate p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
