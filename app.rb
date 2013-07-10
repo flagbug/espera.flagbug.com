@@ -26,7 +26,7 @@ module ReleaseNotes
         @@caching_time = timeNow
         
         client = HTTPClient.new
-        changelog = client.get_content("http://espera.s3.amazonaws.com/Changelog.txt")
+        changelog = client.get_content("http://raw.github.com/flagbug/Espera/master/Changelog.txt")
 
         version_header_match = /----------------------------------- v\d+.\d+.\d+ -----------------------------------/
         version_match = /\d+.\d+.\d+/
@@ -42,7 +42,7 @@ module ReleaseNotes
           content = x[1]
           
           changes = content.scan(changetype_match).map{|change| change[0..-2]}
-          content_split = content.split(changetype_match).map{|x| x.gsub("\n", "")}.map{|x| x.gsub("\r", "")}.reject(&:empty?)
+          content_split = content.split(changetype_match).map{|x| x.gsub("\n", "")}.reject(&:empty?)
           
           entries = changes.zip(content_split).map do |change|
             strip_count = change[0] == "BUGFIXES" ? 3 : 2
