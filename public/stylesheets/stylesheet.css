@@ -186,15 +186,15 @@ p {
   width: 115px;
 }
 
-.donate {
+.development-info {
   margin-top: 80px;
 }
 
-.development-info {
+.donate {
   margin-top: 25px;
 }
 
-.contact p, .donate p {
+.contact p, .donate p, .development-info p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
