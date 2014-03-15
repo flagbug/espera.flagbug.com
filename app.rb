@@ -26,7 +26,7 @@ module ReleaseNotes
         @@caching_time = timeNow
         
         client = HTTPClient.new
-        changelog = client.get_content("http://raw.github.com/flagbug/Espera/master/Changelog.txt")
+        changelog = client.get_content("https://s3.amazonaws.com/espera/Changelog.txt")
 
         version_header_match = /----------------------------------- v\d+.\d+.\d+ -----------------------------------/
         version_match = /\d+.\d+.\d+/
