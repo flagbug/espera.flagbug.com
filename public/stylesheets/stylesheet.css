@@ -115,13 +115,20 @@ p {
   margin-right: 50px;
 }
 
-.download small {
+.download small, .download-beta small {
   font-size: 14px;
 }
 
 .download, .download:hover {
   color: black;
   text-decoration: none;
+}
+
+.download-or-splitter {
+  padding-right: 40px;
+  padding-top: 20px;
+  display: inline-block;
+  float: left;
 }
 
 .feature-box {
