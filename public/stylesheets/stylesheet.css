@@ -8,9 +8,8 @@
 
 body {
   font-family: "Segoe UI", "Segoe WP", Helvetica, "Lucida Grande", sans-serif;
-  background: #DDD;
   border-top: 20px solid #119EDA;
-  color: #222;
+  color: #555;
 }
 
 header {
@@ -107,7 +106,7 @@ p {
 
 .download {
   padding: 10px 20px 10px 20px;
-  background: #48CB00;
+  background: #03961C;
   display: block;
   width: 200px;
   font-size: 18px;
@@ -120,7 +119,7 @@ p {
 }
 
 .download, .download:hover {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -149,7 +148,7 @@ p {
 .release-notes h1 {
   color: white;
   background: #00B159;
-  display:table;
+  display: table;
   font-size: 35px;
   padding: 10px;
   margin-top: 35px;
@@ -158,20 +157,19 @@ p {
 .release-notes h2 {
   color: white;
   background: #00AEDB;
-  padding: 7px;
+  padding: 7px 10px 7px 10px;
   margin-left: 10px;
-  margin-bottom: 7px;
-  display:table;
+  margin-bottom: 10px;
+  display: table;
   font-size: 20px;
 }
 
 .release-notes ul {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 .release-notes li {
   margin-bottom: 15px;
-  list-style: none;
 }
 
 .donate {
