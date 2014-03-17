@@ -193,15 +193,11 @@ p {
   width: 115px;
 }
 
-.development-info {
-  margin-top: 80px;
-}
-
 .donate, .about {
   margin-top: 25px;
 }
 
-.contact p, .donate p, .development-info p {
+.contact p, .donate p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
