@@ -49,9 +49,6 @@ module ReleaseNotes
             type = change[0].downcase[0..-strip_count]
             description = change[1]
             
-            puts type
-            puts description
-            
             description.split("- ").reject(&:empty?).map{|x| ChangelogEntry.new(type, x)} 
           end
           
