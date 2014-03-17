@@ -21,6 +21,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httpclient (~> 2.3.3)
-  sinatra (~> 1.4.3)
-  thin (~> 1.5.1)
+  httpclient
+  sinatra
+  thin
