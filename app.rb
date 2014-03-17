@@ -28,7 +28,7 @@ module ReleaseNotes
         client = HTTPClient.new
         changelog = client.get_content("https://s3.amazonaws.com/espera/Changelog.txt")
 
-        version_header_match = /----------------------------------- v\d+.\d+.\d+ -----------------------------------/
+        version_header_match = /[-]{35} v\d+.\d+.\d+ [-]{35}/
         version_match = /\d+.\d+.\d+/
         
         versions = changelog.scan(version_header_match).map{|header| header.match(version_match)}
