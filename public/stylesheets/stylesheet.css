@@ -149,7 +149,7 @@ p {
   color: white;
   background: #00B159;
   display: table;
-  font-size: 35px;
+  font-size: 25px;
   padding: 10px;
   margin-top: 35px;
 }
@@ -158,14 +158,14 @@ p {
   color: white;
   background: #00AEDB;
   padding: 7px 10px 7px 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 10px;
   display: table;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .release-notes ul {
-  margin-left: 50px;
+  margin-left: 55px;
 }
 
 .release-notes li {
