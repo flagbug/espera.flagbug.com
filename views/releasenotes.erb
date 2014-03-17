@@ -37,21 +37,7 @@
         </nav>
       </header>
       <section class="release-notes">
-        <ul>
-          <% for release in @releases %>
-          <li>
-            <div class="version"><%= release.version %></div>
-            <ul>                          
-              <% release.entries.each do |entry| %>
-              <li>
-                <div class="<%= entry.type %>"><%= entry.type.upcase + ":" %></div>
-                <span><%= entry.description %></span>
-              </li>
-              <% end %>
-            </ul>
-          </li>
-          <% end %>
-        </ul>
+        <%= @rendered %>
       </section>
     </div>
   </body>
