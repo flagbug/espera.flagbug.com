@@ -193,7 +193,11 @@ p {
   width: 115px;
 }
 
-.donate, .about {
+.donate {
+  margin-top: 80px;
+}
+
+.about {
   margin-top: 25px;
 }
 
