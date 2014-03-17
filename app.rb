@@ -42,12 +42,15 @@ module ReleaseNotes
           content = x[1]
           
           changes = content.scan(changetype_match).map{|change| change[0..-2]}
-          content_split = content.split(changetype_match).map{|x| x.gsub("\n", "")}.reject(&:empty?)
+          content_split = content.split(changetype_match).map{|x| x.gsub("\n", "").gsub("\r", "")}.reject(&:empty?)
           
           entries = changes.zip(content_split).map do |change|
             strip_count = change[0] == "BUGFIXES" ? 3 : 2
             type = change[0].downcase[0..-strip_count]
             description = change[1]
+            
+            puts type
+            puts description
             
             description.split("- ").reject(&:empty?).map{|x| ChangelogEntry.new(type, x)} 
           end
