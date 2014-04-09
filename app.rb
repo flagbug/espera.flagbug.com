@@ -6,7 +6,7 @@ get '/' do
   erb :index
 end
 
-get '/EsperaSetup.exe'
+get '/EsperaSetup.exe' do
   redirect 'http://espera.s3.amazonaws.com/EsperaSetup.exe'
 end
 
