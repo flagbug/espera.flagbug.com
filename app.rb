@@ -6,6 +6,10 @@ get '/' do
   erb :index
 end
 
+get '/EsperaSetup.exe'
+  redirect 'http://espera.s3.amazonaws.com/EsperaSetup.exe'
+end
+
 get '/release-notes' do
   client = HTTPClient.new
   content = client.get_content("https://s3.amazonaws.com/espera/Changelog.md")
