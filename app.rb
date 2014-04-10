@@ -23,7 +23,7 @@ get '/Changelog.md' do
 end
 
 get '/Releases/Stable/RELEASES' do
-  redirect 'http://espera.s3.amazonaws.com/Releases/RELEASES'
+  redirect 'http://espera.s3.amazonaws.com/Releases/Stable/RELEASES'
 end
 
 get '/Releases/Stable/:name' do
