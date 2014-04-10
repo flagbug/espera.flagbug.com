@@ -33,7 +33,7 @@ end
 
 get '/release-notes' do
   client = HTTPClient.new
-  content = client.get_content("/Changelog.md")
+  content = client.get_content("http://espera.s3.amazonaws.com/Changelog.md")
   markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   @rendered = markdown.render(content)
   
