@@ -32,7 +32,7 @@ get '/Releases/Stable/:name' do
 end
 
 get '/releases/clickonce/:name' do
-  redirect 'http://espera.s3.amazonaws.com/clickonce/releases/' + params[:name]
+  redirect 'http://espera.s3.amazonaws.com/releases/clickonce/' + params[:name]
 end
 
 get '/release-notes' do
