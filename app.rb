@@ -31,6 +31,10 @@ get '/Releases/Stable/:name' do
   redirect 'http://espera.s3.amazonaws.com/Releases/' + params[:name]
 end
 
+get '/releases/clickonce/:name' do
+  redirect 'http://espera.s3.amazonaws.com/clickonce/releases/' + params[:name]
+end
+
 get '/release-notes' do
   client = HTTPClient.new
   content = client.get_content("http://espera.s3.amazonaws.com/Changelog.md")
