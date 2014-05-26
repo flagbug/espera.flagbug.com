@@ -141,6 +141,10 @@ p {
   color: #119EDA;
 }
 
+.screenshot2 h2 {
+  margin-bottom: 50px;
+}
+
 .release-notes {
   margin-top: 75px;
 }
