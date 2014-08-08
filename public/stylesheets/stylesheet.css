@@ -181,6 +181,14 @@ p {
   margin-top: 80px;
 }
 
+.development-info a, a:visited, a:hover {
+  color: white;
+}
+
+.contact a, a:visited, a:hover {
+  color: white;
+}
+
 .donate, .contact {
   margin-top: 25px;
 }
