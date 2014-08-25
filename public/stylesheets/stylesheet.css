@@ -66,8 +66,8 @@ p {
 .screenshot {
   margin-top: 50px;
   background: url('/images/screenshot.png') no-repeat;
-  width: 1108px;
-  height: 640px;
+  width: 1106px;
+  height: 636px;
   color: white;
   position: relative;
 }
@@ -78,9 +78,9 @@ p {
   padding: 20px 25px 20px 25px;
   color: #FFF;
   text-align: center;
-  bottom: 6px;
-  left: 6px;
-  right: 6px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
 }
 
 .overlay h2 {
