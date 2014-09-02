@@ -141,8 +141,26 @@ p {
   color: #119EDA;
 }
 
-.screenshot2 h2 {
-  margin-bottom: 50px;
+.remote-control h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.remote-control .android-playlist {
+  height: 500px;
+  width: auto;
+  float: left;
+}
+
+.remote-control .android-details {
+  margin-left: 400px;
+  max-width: 600px;
+}
+
+.remote-control .android-badge {
+  margin-top: 50px;
+  height: auto;
+  width: 250px;
 }
 
 .release-notes {
