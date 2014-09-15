@@ -7,7 +7,7 @@ get '/' do
 end
 
 get '/EsperaSetup.exe' do
-  redirect 'http://d1lzv0n76maidw.cloudfront.net//EsperaSetup.exe'
+  redirect 'http://d1lzv0n76maidw.cloudfront.net/EsperaSetup.exe'
 end
 
 get '/EsperaPortable.zip' do
