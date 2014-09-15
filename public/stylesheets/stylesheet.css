@@ -22,6 +22,10 @@ header li a, a:hover {
   text-decoration: none;
 }
 
+img {
+  border: 0;
+}
+
 h1 {
   font-size: 64px;
   margin-bottom: 10px;
