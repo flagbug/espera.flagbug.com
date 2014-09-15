@@ -15,7 +15,7 @@ get '/EsperaPortable.zip' do
 end
 
 get '/Changelog.md' do
-  redirect 'http://espera.s3.amazonaws.com/Changelog.md'
+  redirect 'http://d1lzv0n76maidw.cloudfront.net/Changelog.md'
 end
 
 get '/releases/clickonce/:name' do
