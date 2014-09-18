@@ -4,6 +4,7 @@ GEM
     daemons (1.1.9)
     eventmachine (1.0.3)
     httpclient (2.4.0)
+    newrelic_rpm (3.9.4.245)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -23,6 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   httpclient
+  newrelic_rpm
   redcarpet
   sinatra
   thin
