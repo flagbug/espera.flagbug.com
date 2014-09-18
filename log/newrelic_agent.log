@@ -1,0 +1,93 @@
+# Logfile created on 2014-09-18 14:13:19 +0000 by logger.rb/44203
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Environment: development
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Dispatcher: thin
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Application: getespera.com (Development)
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Installing Net instrumentation
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Finished instrumentation
+[09/18/14 14:13:19 +0000 rails-box-10352 (3078)] INFO : Doing deferred dependency-detection before Rack startup
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Environment: development
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Dispatcher: thin
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Application: getespera.com (Development)
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Installing Net instrumentation
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Finished instrumentation
+[09/18/14 14:13:21 +0000 rails-box-10352 (3083)] INFO : Doing deferred dependency-detection before Rack startup
+[09/18/14 14:13:22 +0000 rails-box-10352 (3083)] INFO : Reporting to: https://rpm.newrelic.com/accounts/772701/applications/4283072
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Environment: development
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Dispatcher: thin
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Application: getespera.com (Development)
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Installing Net instrumentation
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Finished instrumentation
+[09/18/14 14:13:26 +0000 rails-box-10352 (3094)] INFO : Doing deferred dependency-detection before Rack startup
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Environment: development
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Dispatcher: thin
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Application: getespera.com (Development)
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Installing Net instrumentation
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Finished instrumentation
+[09/18/14 14:13:48 +0000 rails-box-10352 (3104)] INFO : Doing deferred dependency-detection before Rack startup
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Environment: development
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Dispatcher: thin
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Application: getespera.com (Development)
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Installing Net instrumentation
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Finished instrumentation
+[09/18/14 14:14:14 +0000 rails-box-10352 (3109)] INFO : Doing deferred dependency-detection before Rack startup
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Environment: development
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Dispatcher: thin
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Application: getespera.com (Development)
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Installing Net instrumentation
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Finished instrumentation
+[09/18/14 14:14:30 +0000 rails-box-10352 (3114)] INFO : Doing deferred dependency-detection before Rack startup
+[09/18/14 14:14:38 +0000 rails-box-10352 (3119)] INFO : Starting the New Relic agent in "development" environment.
+[09/18/14 14:14:38 +0000 rails-box-10352 (3119)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/18/14 14:14:38 +0000 rails-box-10352 (3119)] INFO : Reading configuration from config/newrelic.yml (/home/action/getespera.com)
+[09/18/14 14:14:38 +0000 rails-box-10352 (3119)] INFO : Environment: development
+[09/18/14 14:14:38 +0000 rails-box-10352 (3119)] INFO : Dispatcher: thin
+[09/18/14 14:14:38 +0000 rails-box-10352 (3119)] INFO : Application: getespera.com (Development)
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Installing Sinatra instrumentation
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Installing Net instrumentation
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Installing HTTPClient instrumentation
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Installing deferred Rack instrumentation
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Installing Rack::Builder middleware instrumentation
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Finished instrumentation
+[09/18/14 14:14:39 +0000 rails-box-10352 (3119)] INFO : Doing deferred dependency-detection before Rack startup

@@ -24,11 +24,6 @@ get '/releases/clickonce/:name' do
 end
 
 get '/release-notes' do
-  client = HTTPClient.new
-  content = client.get_content("http://download.getespera.com/Changelog.md")
-  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-  @rendered = markdown.render(content)
-  
   erb :releasenotes
 end
 
