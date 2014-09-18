@@ -4,8 +4,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="/stylesheets/stylesheet.css" type="text/css" media="screen" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/markdown.js/0.6.0-beta1/markdown.min.js"></script>
     
     <title>Release notes</title>
     
@@ -34,13 +32,9 @@
           </ul>
         </nav>
       </header>
-      <section class="release-notes" />
-      <script>
-        $.get('http://download.getespera.com/Changelog.md', function (data) {
-          alert(data);
-          $("release-notes").innerHTML = markdown.toHTML(data);
-        });
-      </script>
+      <section class="release-notes">
+        <%= @rendered %>
+      </section>
     </div>
   </body>
 </html>
