@@ -1,6 +1,7 @@
 require 'httpclient'
 require 'sinatra'
 require 'redcarpet'
+require 'newrelic_rpm'
 
 get '/' do
   erb :index
