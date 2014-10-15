@@ -7,3 +7,4 @@ gem "thin"
 gem "httpclient"
 gem "redcarpet"
 gem 'newrelic_rpm'
+gem "nokogiri"

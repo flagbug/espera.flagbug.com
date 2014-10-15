@@ -1,7 +1,9 @@
 require 'httpclient'
 require 'sinatra'
+require 'json'
 require 'redcarpet'
 require 'newrelic_rpm'
+require 'nokogiri'
 
 get '/' do
   erb :index
@@ -34,4 +36,16 @@ end
 
 get '/about' do
   erb :about
+end
+
+get '/versions/current' do
+  client = HTTPClient.new
+  content = client.get_content("http://download.getespera.com/releases/clickonce/Espera.application")
+  
+  versionRegex = /assemblyIdentity name="Espera.application" version="(\d.\d.\d.\d)"/
+  
+  version = versionRegex.match(content).captures[0]
+  
+  content_type :json
+  { :version => version }.to_json
 end
