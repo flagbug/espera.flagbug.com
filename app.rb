@@ -42,7 +42,7 @@ get '/versions/current' do
   client = HTTPClient.new
   content = client.get_content("http://download.getespera.com/releases/clickonce/Espera.application")
   
-  versionRegex = /assemblyIdentity name="Espera.application" version="(\d.\d.\d.\d)"/
+  versionRegex = /assemblyIdentity name="Espera.application" version="(\d+.\d+.\d+.\d+)"/
   
   version = versionRegex.match(content).captures[0]
   
