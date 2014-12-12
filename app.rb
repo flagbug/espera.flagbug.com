@@ -25,6 +25,10 @@ get '/releases/clickonce/:name' do
   redirect 'http://download.getespera.com/releases/clickonce/' + params[:name]
 end
 
+get '/releases/squirrel/:name' do
+  redirect 'http://download.getespera.com/releases/squirrel/' + params[:name]
+end
+
 get '/release-notes' do
   client = HTTPClient.new
   content = client.get_content("http://download.getespera.com/Changelog.md")
