@@ -25,6 +25,10 @@ get '/releases/clickonce/:name' do
   redirect 'http://download.getespera.com/releases/clickonce/' + params[:name]
 end
 
+get '/releases/clickoncetosquirrel/:name' do
+  redirect 'http://download.getespera.com/releases/clickoncetosquirrel/' + params[:name]
+end
+
 get '/releases/squirrel/:name' do
   redirect 'http://download.getespera.com/releases/squirrel/' + params[:name]
 end
